@@ -1,23 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>Refreshing News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+  <section class="grid-container">
     <header>
       <!-- Some kind of logo and navbar -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img class="logo" src="assets/LHP logo blue@2x.svg" alt="logo">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+          <li>
+            <a href="">ARTICLES</a>
+          </li>
+          <li>
+            <a href="">GALLERY</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="big-news">
       <!-- The big news content -->
+      <article class="big-article">
+        <img class="big-image" src="assets/lisa_forone.png" alt="lisa at forone">
+        <div class="bottom-left">
+          <h1>BIG NEWS</h1>
+        </div>
+      </article>
     </section>
 
-    <section class="">
+    <section class="news-cards">
       <!-- The other news  -->
+      <article class="news-card">
+        <img src="assets/lisa_forone.png" alt="lisa at forone">
+        <h2>HEADLINE 1</h2>
+        <p class="body-text">Some text some text some text</p>
+      </article>
+      <article class="news-card">
+        <img src="assets/lisa_forone.png" alt="lisa at forone">
+        <h2>HEADLINE 2</h2>
+        <p class="body-text">Some text some text some text</p>
+      </article>
+      <article class="news-card">
+        <img src="assets/lisa_forone.png" alt="lisa at forone">
+        <h2>HEADLINE 3</h2>
+        <p class="body-text">Some text some text some text</p>
+      </article>
+      <article class="news-card">
+        <img src="assets/lisa_forone.png" alt="lisa at forone">
+        <h2>HEADLINE 4</h2>
+        <p class="body-text">Some text some text some text</p>
+      </article>
     </section>
-  </body>
+    <footer>
+      <p>&copy LH Production 2024</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Article</a>
+          </li>
+          <li>
+            <a href="">Gallery</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+</body>
+
 </html>
