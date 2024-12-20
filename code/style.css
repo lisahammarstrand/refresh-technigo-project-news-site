@@ -74,11 +74,14 @@ li {
 }
 
 .big-article {
+  display: flex;
+  position: relative;
   padding: 16px 0px 16px 0px;
 }
 
 .big-image {
   width: 100%;
+
 }
 
 h1 {
@@ -89,21 +92,23 @@ h1 {
 
 .bottom-left {
   position: absolute;
-  bottom: 32px;
+  bottom: 20%;
   left: 32px;
+  width: 100%;
 }
 
 .news-cards {
   grid-column: span 4;
   gap: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .news-card {
   display: flex;
   flex-direction: column;
   background: whitesmoke;
-  width: 250px;
+  width: 21%;
   padding: 16px;
 }
 
@@ -134,14 +139,37 @@ footer {
   background-color: #101010;
 }
 
-@media (min-width: 768px) {
-  .hamburger {
+@media only screen and (max-width: 600px) {
+  .main-nav {
     display: none;
+  }
+
+  .news-card {
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .main-nav {
+@media only screen and (min-width: 600px) {
+  .hamburger {
     display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .news-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .news-card {
+    width: 21%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-card {
+    width: 22%;
   }
 }
